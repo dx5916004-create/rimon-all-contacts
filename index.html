@@ -1,4 +1,4 @@
-<!doctype html>
+</html><!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -8,27 +8,38 @@
 
 <style>
 *{box-sizing:border-box}
+
 body{
  margin:0;
- background:#07090d;
+ background:
+ radial-gradient(circle at top,#101d33 0%,#07090d 45%);
  color:#fff;
  font-family:Arial,sans-serif;
+ min-height:100vh;
 }
+
 .wrap{
  max-width:520px;
  margin:auto;
- padding:42px 18px;
+ padding:42px 18px 30px;
 }
-.hero{text-align:center}
+
+.hero{
+ text-align:center;
+}
+
 .avatar{
- width:118px;
- height:118px;
+ width:125px;
+ height:125px;
  margin:auto;
  border-radius:50%;
  overflow:hidden;
  background:#111;
  border:3px solid #1683ff;
- box-shadow:0 0 30px #1683ff55;
+ box-shadow:
+  0 0 12px #1683ff,
+  0 0 30px #1683ff88,
+  0 0 60px #1683ff44;
 }
 
 .avatar img{
@@ -37,24 +48,19 @@ body{
  object-fit:cover;
  display:block;
 }
- width:118px;
- height:118px;
- margin:auto;
- border-radius:50%;
- display:grid;
- place-items:center;
- font-size:44px;
- font-weight:800;
- background:linear-gradient(145deg,#1b2b43,#0c111a);
- border:3px solid #1683ff;
- box-shadow:0 0 30px #1683ff55;
+
+h1{
+ font-size:28px;
+ margin:17px 0 5px;
+ letter-spacing:.5px;
 }
-h1{font-size:28px;margin:16px 0 5px}
+
 .sub{
  color:#8fbfff;
  font-size:14px;
  margin-bottom:28px;
 }
+
 .card{
  display:flex;
  align-items:center;
@@ -64,112 +70,229 @@ h1{font-size:28px;margin:16px 0 5px}
  border-radius:18px;
  text-decoration:none;
  color:#fff;
- background:#111722;
+ background:linear-gradient(145deg,#121a27,#0d131d);
  border:1px solid #263449;
+ box-shadow:0 5px 18px #0005;
+ transition:
+  transform .2s ease,
+  border-color .2s ease,
+  box-shadow .2s ease,
+  background .2s ease;
 }
+
+.card:hover{
+ transform:translateY(-3px);
+ border-color:#1683ff;
+ box-shadow:
+  0 8px 28px #1683ff30,
+  0 0 15px #1683ff18;
+ background:#141e2d;
+}
+
 .icon{
- width:44px;
- height:44px;
- border-radius:13px;
+ width:46px;
+ height:46px;
+ flex-shrink:0;
+ border-radius:14px;
  display:grid;
  place-items:center;
- font-size:22px;
- background:#1b2534;
+ font-size:23px;
+ font-weight:bold;
+ background:#1a2637;
+ border:1px solid #30445f;
 }
-.txt{flex:1}
-.txt b{display:block;font-size:17px}
+
+.txt{
+ flex:1;
+}
+
+.txt b{
+ display:block;
+ font-size:17px;
+}
+
 .txt small{
  display:block;
  color:#8e9bad;
  margin-top:4px;
 }
+
 .arrow{
- font-size:25px;
+ font-size:27px;
  color:#1683ff;
 }
+
+.share{
+ display:block;
+ text-align:center;
+ margin-top:20px;
+ padding:13px;
+ border-radius:15px;
+ color:#8fbfff;
+ text-decoration:none;
+ border:1px solid #263449;
+ background:#101722;
+ transition:.2s;
+}
+
+.share:hover{
+ border-color:#1683ff;
+ color:#fff;
+ box-shadow:0 0 20px #1683ff22;
+}
+
 .note{
  text-align:center;
  color:#667085;
  font-size:12px;
- margin-top:25px;
+ margin-top:20px;
 }
 </style>
 </head>
 
 <body>
+
 <main class="wrap">
 
 <section class="hero">
-<div class="avatar"><img src="./rimon-profile.jpg" alt="RÊZBĨ RÎMØÑ"></div>
+
+<div class="avatar">
+<img src="./rimon-profile.jpg" alt="RÊZBĨ RÎMØÑ">
+</div>
+
 <h1>RÊZBĨ RÎMØÑ</h1>
-<div class="sub">My All Contacts • Tap any option to connect</div>
+
+<div class="sub">
+My All Contacts • Tap any option to connect
+</div>
+
 </section>
 
+
 <a class="card" href="tel:+8801961124417">
+
 <div class="icon">☎</div>
+
 <div class="txt">
 <b>Phone</b>
 <small>01961124417</small>
 </div>
+
 <div class="arrow">›</div>
+
 </a>
 
-<a class="card" href="https://wa.me/qr/FPRZX6IKMKRHC1" target="_blank">
+
+<a class="card"
+href="https://wa.me/qr/FPRZX6IKMKRHC1"
+target="_blank">
+
 <div class="icon">◉</div>
+
 <div class="txt">
 <b>WhatsApp</b>
 <small>Message me on WhatsApp</small>
 </div>
+
 <div class="arrow">›</div>
+
 </a>
 
-<a class="card" href="https://www.facebook.com/rezbi.chowdhury.83469" target="_blank">
+
+<a class="card"
+href="https://www.facebook.com/rezbi.chowdhury.83469"
+target="_blank">
+
 <div class="icon">f</div>
+
 <div class="txt">
 <b>Facebook</b>
 <small>My Facebook profile</small>
 </div>
+
 <div class="arrow">›</div>
+
 </a>
 
-<a class="card" href="https://www.instagram.com/rezbi_rimon" target="_blank">
+
+<a class="card"
+href="https://www.instagram.com/rezbi_rimon"
+target="_blank">
+
 <div class="icon">◎</div>
+
 <div class="txt">
 <b>Instagram</b>
 <small>@rezbi_rimon</small>
 </div>
+
 <div class="arrow">›</div>
+
 </a>
 
-<a class="card" href="https://www.tiktok.com/@rezbirimon" target="_blank">
+
+<a class="card"
+href="https://www.tiktok.com/@rezbirimon"
+target="_blank">
+
 <div class="icon">♪</div>
+
 <div class="txt">
 <b>TikTok</b>
 <small>@rezbirimon</small>
 </div>
+
 <div class="arrow">›</div>
+
 </a>
 
-<a class="card" href="https://t.me/rezbivi" target="_blank">
+
+<a class="card"
+href="https://t.me/rezbivi"
+target="_blank">
+
 <div class="icon">➤</div>
+
 <div class="txt">
 <b>Telegram</b>
 <small>@rezbivi</small>
 </div>
+
 <div class="arrow">›</div>
+
 </a>
 
-<a class="card" href="https://s.imoim.net/kP3YvV" target="_blank">
+
+<a class="card"
+href="https://s.imoim.net/kP3YvV"
+target="_blank">
+
 <div class="icon">i</div>
+
 <div class="txt">
 <b>IMO</b>
 <small>Open my IMO chat</small>
 </div>
+
 <div class="arrow">›</div>
+
 </a>
 
-<div class="note">Rimon • Public contact page</div>
+
+<a class="share"
+href="https://dx5916004-create.github.io/rimon-all-contacts/"
+target="_blank">
+
+🔗 Share My Contact Page
+
+</a>
+
+
+<div class="note">
+Rimon • Public contact page
+</div>
 
 </main>
+
 </body>
 </html>
