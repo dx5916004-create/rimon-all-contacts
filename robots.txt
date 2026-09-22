@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dx5916004-create.github.io/rimon-all-contacts/sitemap.xml
