@@ -1,52 +1,63 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#07080c">
-<title>REZBI RIMON — My All Contacts</title>
+<title>REZBI RIMON | All Contacts</title>
 <style>
-body{margin:0;padding:24px 14px;background:#07080c;color:#f7f8fc;font-family:Arial,sans-serif;display:flex;justify-content:center}
-.wrap{width:100%;max-width:520px}
-header{text-align:center;padding:25px 0}
-.avatar{margin:auto auto 20px;width:110px;height:110px;border:2px solid #586174;border-radius:50%;display:grid;place-items:center;background:#171b25;font-size:38px;font-weight:bold}
-h1{font-size:32px;margin:0}
-.tagline{color:#9da6b6}
-.links{display:grid;gap:12px}
-.card{display:flex;align-items:center;gap:15px;padding:18px;border:1px solid #272d3a;border-radius:22px;background:#11141c;color:#f7f8fc;text-decoration:none}
-.icon{width:52px;height:52px;display:grid;place-items:center;border-radius:16px;background:#1b2230;font-size:25px;font-weight:bold}
-.label{font-size:19px;font-weight:bold}
-.detail{display:block;color:#9da6b6;font-size:13px;margin-top:5px}
-.copy{flex:1}
-.arrow{font-size:28px}
-footer{text-align:center;color:#737c8c;font-size:12px;padding:25px 0}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#112b4e,#071326 60%,#050a13);color:#fff;font-family:Arial,sans-serif}
+main{max-width:680px;margin:auto;padding:45px 22px}
+header{text-align:center;margin-bottom:42px}
+.avatar{width:218px;height:218px;border-radius:50%;object-fit:cover;border:5px solid #1687ff;box-shadow:0 0 30px #1687ff}
+h1{font-size:42px;margin:25px 0 8px}
+.sub{color:#a9c8f8;font-size:18px}
+.links{display:grid;gap:20px}
+.card{display:flex;align-items:center;gap:22px;padding:22px;border:1px solid #1b2c43;border-radius:30px;background:#0d1727;color:white;text-decoration:none;min-height:125px}
+.card:hover{border-color:#1687ff;box-shadow:0 0 18px #1687ff55}
+.icon{width:78px;height:78px;flex-shrink:0;display:grid;place-items:center;border-radius:24px;background:#1a2a40;font-size:32px;font-weight:bold}
+.info h2{font-size:26px;margin:0 0 8px}
+.info p{font-size:18px;color:#a1aec2;margin:0;overflow-wrap:anywhere}
+.arrow{margin-left:auto;color:#1687ff;font-size:32px}
+.qr{text-align:center;margin-top:25px;padding:22px;background:#0d1727;border-radius:25px;overflow-wrap:anywhere}
+.qr a{color:#7db8ff}
+footer{text-align:center;color:#8795aa;margin-top:25px}
+@media(max-width:480px){main{padding:35px 18px}.avatar{width:200px;height:200px}h1{font-size:34px}.card{padding:18px;gap:16px}.icon{width:65px;height:65px;border-radius:20px}.info h2{font-size:23px}.info p{font-size:16px}}
 </style>
 </head>
 <body>
-<main class="wrap">
+<main>
 <header>
-<div class="avatar">RR</div>
-<h1>REZBI RIMON</h1>
-<p class="tagline">My All Contacts · Tap to Connect</p>
+<img class="avatar" src="profile.jpg" alt="Rezbi Rimon">
+<h1>Rezbi Rimon</h1>
+<div class="sub">RÉZBĪ RIMŌN</div>
+<p class="sub">My All Contacts · Tap any option to connect</p>
 </header>
-<nav class="links">
-<a class="card" href="tel:01961124417"><span class="icon">☎</span><span class="copy"><span class="label">Phone</span><span class="detail">01961124417</span></span><span class="arrow">›</span></a>
-<a class="card" href="https://wa.me/8801961124417"><span class="icon">◉</span><span class="copy"><span class="label">WhatsApp</span><span class="detail">Message me</span></span><span class="arrow">›</span></a>
-<a class="card" href="https://www.facebook.com/share/1F88s2d56q/"><span class="icon">f</span><span class="copy"><span class="label">Facebook</span><span class="detail">My Facebook profile</span></span><span class="arrow">›</span></a>
-<a class="card" href="https://www.instagram.com/rezbi_rimon?psln=ZDF3bXA3ajB6MzVt"><span class="icon">◎</span><span class="copy"><span class="label">Instagram</span><span class="detail">@rezbi_rimon</span></span><span class="arrow">›</span></a>
-<a class="card" href="https://www.tiktok.com/@rezbirimon?_r=1&amp;_t=ZS-9Ac4Bh9hwEn"><span class="icon">♪</span><span class="copy"><span class="label">TikTok</span><span class="detail">@rezbirimon</span></span><span class="arrow">›</span></a>
-<a class="card" href="https://t.me/rezbivi"><span class="icon">➤</span><span class="copy"><span class="label">Telegram</span><span class="detail">@rezbivi</span></span><span class="arrow">›</span></a>
-<a class="card" href="https://s.imoim.net/kP3YvV"><span class="icon">i</span><span class="copy"><span class="label">IMO</span><span class="detail">Open my IMO chat</span></span><span class="arrow">›</span></a>
-</nav>
-<section style="margin-top:22px;padding:20px;text-align:center;border:1px solid #272d3a;border-radius:22px;background:#11141c">
-<h2>Scan My Contact QR</h2>
-<p style="color:#9da6b6">Scan to open my contact page</p>
-<a href="https://dx5916004-create.github.io/rimon-all-contacts/">
-<img width="190" height="190" alt="Contact QR code" src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&amp;data=https%3A%2F%2Fdx5916004-create.github.io%2Frimon-all-contacts%2F">
-</a>
+
+<section class="links">
+<a class="card" href="tel:01961124417"><span class="icon">☎</span><div class="info"><h2>Phone</h2><p>01961124417</p></div><span class="arrow">›</span></a>
+
+<a class="card" href="https://wa.me/8801961124417"><span class="icon">◉</span><div class="info"><h2>WhatsApp</h2><p>Message me on WhatsApp</p></div><span class="arrow">›</span></a>
+
+<a class="card" href="https://www.facebook.com/share/1F88s2d56q/" target="_blank"><span class="icon">f</span><div class="info"><h2>Facebook</h2><p>My Facebook profile</p></div><span class="arrow">›</span></a>
+
+<a class="card" href="https://www.instagram.com/rezbi_rimon?psln=ZDF3bXA3ajB6MzVt" target="_blank"><span class="icon">◎</span><div class="info"><h2>Instagram</h2><p>@rezbi_rimon</p></div><span class="arrow">›</span></a>
+
+<a class="card" href="https://www.tiktok.com/@rezbirimon?_r=1&_t=ZS-9Ac4Bh9hwEn" target="_blank"><span class="icon">♪</span><div class="info"><h2>TikTok</h2><p>@rezbirimon</p></div><span class="arrow">›</span></a>
+
+<a class="card" href="https://t.me/rezbivi" target="_blank"><span class="icon">➤</span><div class="info"><h2>Telegram</h2><p>@rezbivi</p></div><span class="arrow">›</span></a>
+
+<a class="card" href="https://s.imoim.net/kP3YvV" target="_blank"><span class="icon">i</span><div class="info"><h2>IMO</h2><p>Connect with me</p></div><span class="arrow">›</span></a>
 </section>
-<footer>© <span id="year">2026</span> REZBI RIMON · Personal Contact Page</footer>
+
+<section class="qr">
+<h2>My Contact Page</h2>
+<p>Open and share my contact page</p>
+<a href="https://dx5916004-create.github.io/rimon-all-contacts/">Visit My Website</a>
+</section>
+
+<footer>© REZBI RIMON · All Contacts</footer>
 </main>
-<script>document.getElementById("year").textContent=new Date().getFullYear()</script>
 </body>
 </html>
